@@ -1892,9 +1892,12 @@ img {
   font-size: 0.875rem;
   color: #fff;
 }
+ .site-footer .social-icons  a{font-size: 22px;
+  margin-right: 14px;transition: 0.5s;text-decoration: none;}
 
+  .site-footer .social-icons  a:hover{color: #fd5f17;}
 .header-style-2 .topbar .social-icons ul a:hover, .header-style-3 .topbar .social-icons ul a:hover {
-  color: #fd5f17;
+  color: #fd5f17;text-decoration: none;
 }
 
 .header-style-2 .topbar .contact-info, .header-style-3 .topbar .contact-info {
@@ -2591,6 +2594,7 @@ img {
 
 .site-footer .contact-widget ul li {
   position: relative;
+  display: inline-block;
 }
 
 .site-footer .contact-widget ul > li + li {
