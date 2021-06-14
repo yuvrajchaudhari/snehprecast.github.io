@@ -7148,6 +7148,16 @@ img {
     display: block;
     float: none !important;
   }
+  .carousel-inner h1 {
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.carousel-inner p {
+  color: #777777;
+  line-height: 1.2em;
+  font-size: 11px;
+}
+.topbar{display: none;}
 }
 
 .shop-single-section .product-info .review-form form .rating-wrapper > div:last-child {
@@ -7201,6 +7211,14 @@ img {
     font-size: 0.9375rem;
     padding: 0 20px;
   }
+  .carousel-caption {
+    font-size: 60px;
+    top: 19%;
+    text-transform: uppercase;
+    right: 20%;
+    left: 6%;
+    padding-bottom: 30px;
+}
 }
 
 .shop-single-section .slider-nav .slick-slide:focus {
@@ -7256,3 +7274,10 @@ img {
 }
 .ti-check{color: #fd5f17;}
 .value-section ul li{font-weight: 500;}
+.carousel-inner h1{font-size: 60px;
+  text-transform: uppercase;}
+  .carousel-inner p{
+    color: #777777;
+    line-height: 1.2em;
+    font-size: 23px;
+  }
