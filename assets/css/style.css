@@ -7148,10 +7148,7 @@ img {
     display: block;
     float: none !important;
   }
-  .carousel-inner h1 {
-    font-size: 17px;
-    text-transform: uppercase;
-}
+  
 .carousel-inner p {
   color: #777777;
   line-height: 1.2em;
@@ -7280,4 +7277,13 @@ img {
     color: #777777;
     line-height: 1.2em;
     font-size: 23px;
+  }
+  @media(max-width:767px){
+    .carousel-inner h1 {
+      font-size: 17px;
+      text-transform: uppercase;
+  }
+  .carousel-inner p{
+    display: none;
+  }
   }
