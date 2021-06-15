@@ -381,6 +381,36 @@
     /*------------------------------------------
         = PARTNERS SLIDER
     -------------------------------------------*/
+
+    if ($(".product-details-slider").length) {
+        $(".product-details-slider").owlCarousel({
+            autoplay:false,
+            smartSpeed: 1000,
+            margin: 20,
+            loop:true,
+            nav:true,
+            autoplayHoverPause:true,
+            dots: false,
+            responsive: {
+                0 : {
+                    items: 1
+                },
+
+                550 : {
+                    items: 1
+                },
+
+                992 : {
+                    items: 1
+                },
+
+                1200 : {
+                    items: 1
+                }
+            }
+        });
+    }
+
     if ($(".prod-slider").length) {
         $(".prod-slider").owlCarousel({
             autoplay:true,
@@ -392,11 +422,11 @@
             dots: false,
             responsive: {
                 0 : {
-                    items: 2
+                    items: 1
                 },
 
                 550 : {
-                    items: 3
+                    items: 1
                 },
 
                 992 : {
