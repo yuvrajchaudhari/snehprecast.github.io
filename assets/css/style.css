@@ -7337,7 +7337,8 @@ img {
 .bg-white{
   background-color: #ffffff;
 }
-.ti-check{color: #fd5f17;}
+.ti-check,.ti-angle-double-right{color: #fd5f17;}
+
 .value-section ul li{font-weight: 500;}
 .carousel-inner h1{font-size: 60px;
   text-transform: uppercase;}
