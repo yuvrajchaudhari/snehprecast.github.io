@@ -3,7 +3,7 @@
 	Fonts
 ----------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:500,600,700|Roboto:400,400i,500,700&amp;display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
 /*--------------------------------------------------------------
 #0.1     Reset Style
 --------------------------------------------------------------*/
@@ -38,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Lobster', cursive;
   font-weight: 600;
   color: #2b3256;
 }
@@ -245,7 +245,7 @@ img {
 .section-title h2, .section-title-s2 h2, .section-title-s3 h2, .section-title-s4 h2, .section-title-s5 h2 {
   font-size: 38px;
   font-size: 2.375rem;
-  font-weight: bold;
+  font-weight: 900;
   margin: 0.1em 0 0;
 }
 
@@ -531,7 +531,7 @@ img {
 .page-title h2 {
   font-size: 55px;
   font-size: 3.4375rem;
-  font-weight: 700;
+  font-weight: 900;
   color: #fff;
   margin: 0.5em 0 0.30em;
   text-shadow: 0px 0px 5px #000;
@@ -1312,7 +1312,7 @@ img {
   }
   .site-header #navbar > ul .sub-menu {
     background-color: #fff;
-    width: 220px;
+    width: 550px;
     position: absolute;
     left: 0;
     top: 100%;
@@ -1329,6 +1329,8 @@ img {
   }
   .site-header #navbar > ul > li .sub-menu li {
     border-bottom: 1px solid #efefef;
+    width: 50%;
+    float: left;
   }
   .site-header #navbar > ul > li .sub-menu a {
     font-size: 14px;
@@ -1674,7 +1676,7 @@ img {
     font-size: 0.875rem;
     font-weight: 500;
     color: #fff;
-    padding: 38px 29px;
+    padding: 38px 24px;
     text-transform: uppercase;
   }
 }
@@ -1851,7 +1853,7 @@ img {
     box-shadow: 0px 0px 4px #000;
   }
 }
-
+.pb-3{padding-bottom: 20px;}
 .header-style-2 .topbar, .header-style-3 .topbar {
   background-color: #131e4a;
   padding: 10px 0;
@@ -3955,7 +3957,7 @@ img {
   position: relative;
   padding-left: 60px;
   padding-bottom: 5px;
-  padding-top: 25px;
+  padding-top: 69px;
 }
 
 @media (max-width: 991px) {
