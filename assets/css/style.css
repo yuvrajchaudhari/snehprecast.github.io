@@ -233,7 +233,7 @@ img {
 }
 
 .section-title > span, .section-title-s2 > span, .section-title-s3 > span, .section-title-s4 > span, .section-title-s5 > span {
-  font-size: 15px;
+  font-size: 25px !important;
   font-size: 0.9375rem;
   font-weight: 500;
   color: #fd5f17;
