@@ -3,7 +3,7 @@
 	Fonts
 ----------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:500,600,700|Roboto:400,400i,500,700&amp;display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Lobster&family=Oleo+Script:wght@400;700&display=swap');
 /*--------------------------------------------------------------
 #0.1     Reset Style
 --------------------------------------------------------------*/
@@ -38,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Caladea', serif;
+  font-family: 'Croissant One', cursive;
   font-weight: 600;
   color: #2b3256;
 }
@@ -240,12 +240,13 @@ img {
   text-transform: capitalize;
   display: block;
   margin-top: -0.2em;
+  font-family: 'Lobster', cursive;
 }
 
 .section-title h2, .section-title-s2 h2, .section-title-s3 h2, .section-title-s4 h2, .section-title-s5 h2 {
   font-size: 38px;
   font-size: 2.375rem;
-  font-weight: 900;
+  font-weight: 500;
   margin: 0.1em 0 0;
 }
 
@@ -2478,6 +2479,7 @@ img {
   padding-bottom: 0.4em;
   text-transform: capitalize;
   position: relative;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -6683,7 +6685,8 @@ img {
   text-align: center;
   clear: both;
 }
-
+.zoom { transition: transform .2s;}
+.zoom:hover { transform: scale(1.1); }
 /*--------------------------------------------------------------
 	#shop single page
 --------------------------------------------------------------*/
@@ -6693,6 +6696,7 @@ img {
 .shop-single-section {
   /*** product slider ***/
   /*** product info ***/
+  margin-bottom: 64px;
 }
 
 .shop-single-section .shop-single-slider .slider-for {
@@ -7368,6 +7372,17 @@ img {
   .photo-gallery .item{margin-bottom: 15px;margin-left: 15px;
     margin-right: 15px;}
   }
+
+
+  @media (max-width: 580px){
+  .section-padding {
+      padding: 20px 0;
+  }
+  }
+
+
+
+
   .glow-on-hover {
     width: 220px;
     height: 107px;
