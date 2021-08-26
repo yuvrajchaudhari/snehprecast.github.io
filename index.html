@@ -38,28 +38,6 @@
     <!-- start page-wrapper -->
     <div class="page-wrapper">
 
-        <!-- start preloader -->
-        <div class="preloader">
-            <div class="loader">
-                <!-- <img src="assets/images/logo-2.png" alt=""> -->
-                <!-- <div class="gear two">
-                    <svg viewbox="0 0 100 100" fill="#131e4a">
-                        <path
-                            d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z">
-                        </path>
-                    </svg>
-                </div>
-                <div class="gear three">
-                    <svg viewbox="0 0 100 100" fill="#fd5f17">
-                        <path
-                            d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z">
-                        </path>
-                    </svg>
-                </div> -->
-            </div>
-        </div>
-        <!-- end preloader -->
-
         <!-- Start header -->
         <header id="header" class="site-header header-style-2">
             <div class="topbar">
@@ -79,9 +57,133 @@
                         <div class="col col-sm-9">
                             <div class="contact-info">
                                 <ul>
-                                    <li><i class="ti-email"></i> sale@snehindustries.com</li>
-                                    <li><i class="ti-time"></i> 9AM - 5PM</li>
+                                    <li class="hidden-xs"> <a class="btn btn-danger" data-toggle="modal"
+                                            data-target=".bs-example-modal-sm"><b>Send Enquiry</b></a></li>
+
+                                    <li class="down-btn"><i class="ti-download"></i> <a class="download-animation"
+                                            data-toggle="modal" data-target="#bs-downolad-brochure"><b>Download
+                                                Brochure</b></a></li>
+
+                                    <li><i class="ti-email"></i> <a href="mailto:sales@snehprecast.in"
+                                            class="text-white">sales@snehprecast.in</a></li>
+                                    <li><i class="ti-mobile"></i> <a href="tel:+838 001 6247" class="text-white">838 001
+                                            6247</a></li>
                                 </ul>
+                                <!-- For Enquiry -->
+                                <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
+                                    aria-labelledby="mySmallModalLabel">
+                                    <div class="modal-dialog modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="panel panel-info mb-0">
+                                                <div class="panel-heading">
+                                                    <div class="panel-title">Please Fillup Form </div>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <form action="" id="form" method="post" role="form">
+                                                        <div class="contact-form validateContainer">
+                                                            <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+                                                                <div class="">
+                                                                    <div class="form-group">
+                                                                        <div class="validateField">
+                                                                            <label><b>Name *</b></label>
+                                                                            <input id="name" type="text" name="name" class="form-control validateRequired"
+                                                                                placeholder="Please enter Name *" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="">
+                                                                    <div class="form-group">
+                                                                        <div class="validateField">
+                                                                            <label><b>Mobile *</b></label>
+                                                                            <input name="mobile" type="text" maxlength="10" id="mobile"
+                                                                                class="form-control validateRequired validateNumber validateMobileNoLimit"
+                                                                                placeholder="Mobile Number" required />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="">
+                                                                    <div class="form-group">
+                                                                        <div class="validateField">
+                                                                            <label><b>Email *</b></label>
+                                                                            <input name="email" type="text" maxlength="50" id="email"
+                                                                                class="form-control validateRequired validateEmail"
+                                                                                placeholder="Email ID" required />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 col-sm-12 col-xs-12 no-padding">
+                                                                        <input type="submit" class="btn btn-primary checkValidationBtn" value="Submit">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Enquiry -->
+
+                                <div class="modal fade" id="bs-downolad-brochure" tabindex="-1" role="dialog"
+                                    aria-labelledby="mySmallModalLabel">
+                                    <div class="modal-dialog modal-sm" role="document">
+                                        <div class="modal-content">
+                                            <div class="panel panel-info mb-0">
+                                                <div class="panel-heading">
+                                                    <div class="panel-title">Please Fillup Form to<br>Download Brochure </div>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <form action="" id="sample-form" method="post" role="form">
+                                                        <div class="contact-form validateContainer">
+                                                            <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+                                                                <div class="">
+                                                                    <div class="form-group">
+                                                                        <div class="validateField">
+                                                                            <label><b>Name *</b></label>
+                                                                            <input id="dwname" type="text" name="name" class="form-control validateRequired"
+                                                                                placeholder="Please enter Name *" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="">
+                                                                    <div class="form-group">
+                                                                        <div class="validateField">
+                                                                            <label><b>Mobile *</b></label>
+                                                                            <input name="mobile" type="text" maxlength="10" id="dwmobile"
+                                                                                class="form-control validateRequired validateNumber validateMobileNoLimit"
+                                                                                placeholder="Mobile Number" required />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="">
+                                                                    <div class="form-group">
+                                                                        <div class="validateField">
+                                                                            <label><b>Email *</b></label>
+                                                                            <input name="email" type="text" maxlength="50" id="dwemail"
+                                                                                class="form-control validateRequired validateEmail"
+                                                                                placeholder="Email ID" required />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 col-sm-12 col-xs-12 no-padding">
+                                                                        <input type="submit" class="btn btn-primary checkValidationBtn" value="Submit">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -96,65 +198,58 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index-2.html"><img src="assets/images/slogan.png" alt></a>
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/slogan.png" alt></a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse navigation-holder">
                         <button class="close-navbar"><i class="ti-close"></i></button>
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
+                            <!-- <li><a href="about.html">About Us</a></li> -->
                             <li class="menu-item-has-children">
-                                <a href="products.html">Products</a>
+                                <a href="#">About Us</a>
                                 <ul class="sub-menu">
-                                    <li><a href="paver-block.html">Paving Blocks</a></li>
-                                    <li><a href="grass-pavor.html">Grass Paver</a></li>
-                                    <li><a href="glossy-finish.html">Glossy Finish</a></li>
-                                    <li><a href="tiles.html">Tiles</a></li>
-                                    <li><a href="kerb-stones.html">Kerb Stones</a></li>
-                                    <li><a href="solid-block-and-bricks.html">Solid Blocks & Bricks</a></li>
-                                    <li><a href="street-furniture.html">Street Furniture</a></li>
-                                    <li><a href="RE-blocks.html">RE Block</a></li>
-                                    <li><a href="hume-pipe.html">Hume Pipe</a></li>
-                                    <li><a href="barrier-board-and-cover.html">Barrier Board & Cover</a></li>
-                                    <li><a href="compound-wall.html">Compound Wall</a></li>
-                                    <li><a href="u-drain.html">U Drain</a></li>
-
-                                    <!--  <li><a href="">Compound Wall</a></li>
-                                    
-                                    <li><a href="">Cover</a></li>
-                                    <li><a href="">Dry Mix Morter</a></li> -->
-
+                                    <li><a href="about-ceo-message.html">CEO Message</a></li>
+                                    <li><a href="about-vision-purpose-value.html"> Vision Mission & Values</a></li>
+                                    <li><a href="our-strength.html">Our Strength</a></li>
+                                    <li><a href="about-our-story.html">Our Story</a></li>
+                                    <li><a href="about-our-team.html">Our Team</a></li>
                                 </ul>
                             </li>
-                            <!-- <li class="menu-item-has-children">
-                                <a href="#">Services</a>
+                            <li class="menu-item-has-children">
+                                <a href="">Products</a>
                                 <ul class="sub-menu">
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="services-s2.html">Services style 2</a></li>
-                                    <li><a href="service-single.html">Mechanical Engineering</a></li>
-                                    <li><a href="oil-gas.html">Oil And Gas</a></li>
-                                    <li><a href="power-energy.html">Power And Energy</a></li>
-                                    <li><a href="sanitary-plumbing.html">Sanitary &amp; Plumbing</a></li>
-                                    <li><a href="electrical-power.html">Electrical Power</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#Level3">Pavers</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="shotblasted.html">Shotblast & Leather Finish</a></li>
+                                            <li><a href="mono-layer.html">Mono Layer/ Rough Finish</a></li>
+                                            <li><a href="glossy-finish.html">Glossy finish paving blocks</a></li>
+                                            <li><a href="grass-pavor.html">Grass Paver</a></li>
+                                            <li><a href="permebale.html">Permebale/Pourus Blocks</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="tiles.html">Tiles</a></li>
+                                    <li><a href="kerb-stones.html">Kerb Stones</a></li>
+                                    <li><a href="compound-wall.html">Compound Wall</a></li>
+                                    <li><a href="u-drain.html">U Drain</a></li>
+                                    <li><a href="RE-blocks.html">RE Blocks</a></li>
+                                    <li><a href="hume-pipe.html">Hume Pipe</a></li>
+                                    <li><a href="solid-block-and-bricks.html">Solid Blocks & Bricks</a></li>
+                                    <li><a href="street-furniture.html">Street Furniture</a></li>
+                                    <li><a href="barrier-board-and-cover.html">Barrier Board</a></li>
+                                    <li><a href="covers.html">Cover</a></li>
+                                    <li><a href="rmc.html">RMC </a></li>
+                                    <li><a href="dmm.html">Dry Mix Morter</a></li>
                                 </ul>
-                            </li> -->
-                            <li><a href="project-gallery.html">Gallery</a></li>
+                            </li>
+
                             <li><a href="services.html">Services</a></li>
+                            <li><a href="project-gallery.html">Gallery</a></li>
+                            <li><a href="">Blogs &amp; Case Studies</a></li>
+                            <li><a href="our-client.html">Our Client</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div><!-- end of nav-collapse -->
-
-                    <div class="search-contact">
-                        <div class="header-search-area">
-                        </div>
-                        <div class="contact">
-                            <div class="call">
-                                <i class="fi flaticon-call"></i>
-                                <p>Call us anytime</p>
-                                <h5><a href="tel:+83800 16240">83800 16240</a></h5>
-                            </div>
-                        </div>
-                    </div>
                 </div><!-- end of container -->
             </nav>
         </header>
@@ -165,88 +260,23 @@
             <div class="">
                 <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
                     <!-- Indicators -->
-                    <ol class="carousel-indicators">
+                    <!-- <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                         <li data-target="#myCarousel" data-slide-to="3"></li>
                         <li data-target="#myCarousel" data-slide-to="4"></li>
                         <li data-target="#myCarousel" data-slide-to="5"></li>
-                    </ol>
+                        <li data-target="#myCarousel" data-slide-to="6"></li>
+                    </ol> -->
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img src="assets/images/slider/6-01.jpg" alt="Los Angeles" style="width:100%;">
-
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/slider/1-01.jpg" alt="Los Angeles" style="width:100%;">
-                            <div class="carousel-caption">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <!-- <h1>Snehprecast Paving a world of Possibilities</h1> -->
-
-                                    </div>
-                                    <div class="col-lg-6"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/slider/2-01.jpg" alt="Los Angeles" style="width:100%;">
-                            <!-- <div class="carousel-caption">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <h1>Snehprecast Paving a world of Possibilities</h1>
-
-                                    </div>
-                                    <div class="col-lg-6"></div>
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/slider/3-01.jpg" alt="Los Angeles" style="width:100%;">
-                            <!-- <div class="carousel-caption">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <h1>Our Products</h1>
-                                    </div>
-                                    <div class="col-lg-6"></div>
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/slider/4-01.jpg" alt="Los Angeles" style="width:100%;">
-                            <!-- <div class="carousel-caption">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <h1>Our Products</h1>
-                                    </div>
-                                    <div class="col-lg-6"></div>
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/slider/5-01.jpg" alt="Los Angeles"
-                                style="width:100%;">
-                            <!-- <div class="carousel-caption">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <h1>Our Products</h1>
-                                    </div>
-                                    <div class="col-lg-6"></div>
-                                </div>
-                            </div> -->
+                            <img src="assets/images/slider/121-01.jpg" alt="paver block" style="width:100%;">
+                            
                         </div>
                         
-                        <!-- <div class="item">
-                            <img src="assets/images/slider/street furniture-01.jpg" alt="Los Angeles"
-                                style="width:100%;">
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/slider/tiles-01.jpg" alt="Los Angeles" style="width:100%;">
-
-                        </div> -->
                     </div>
 
                     <!-- Left and right controls -->
@@ -262,15 +292,13 @@
             </div>
         </section>
         <!-- end of hero slider -->
-
-
         <section class="about-us-section section-padding" style="background-color: #ffffff;">
             <div class="container">
                 <div class="row">
                     <div class="col col-md-6  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
                         <div class="section-title">
                             <span>About us</span>
-                            <h2>Sneh Precast is a decade experienced company
+                            <h2>About Us
                             </h2>
                         </div>
 
@@ -291,35 +319,28 @@
                         </div> -->
                         <div class="details">
                             <p>
-                                Into various precast elements manufacturing with state of the art manufacturing unit
-                                located at Pune. We at Sneh manufacture & provide site erection Services of various
-                                precast products to serve projects in various applications like Highway, Footpaths,
-                                Industrial Lands, Storm/Drainage Water, Petrol Pump Outlets, Ports, Cable Trenching,
-                                Smart City Furnishing etc.
-                                We at Sneh have value based culture & we rigorously follow cultural values to customers.
-                                We are growth minded & continuously working towards growth in various aspects of
-                                business.
+                                Sneh Precast is decade experienced organization manufacturing & erection of various
+                                precast elements like Paving blocks, U drain, Hume pipes, Compound wall, Kerb stone,
+                                Street furniture, RMC, DMM etc. with state of the art manufacturing setup at Pune. Sneh
+                                serves infrastructure, residential & industrial development of the country for
+                                applications like Highways, footpaths, industrial lands, storm/drainage water, petrol
+                                pump outlets, petrol pump outlets, Ports, cable trenches, Smart city etc. We are the
+                                largest manufacturer of blocks in Mahasrashtra with more than 2L blocks per day
+                                <br>
+                                Customer focus is our core value and we have been working tirelessly to deliver to the
+                                satisfaction of customers. PSUs like BPCL, IOCL, HPCL, corporates like L&T, Tata
+                                Projects, Reliance, MEIL, Mahindra, FIAT etc, Reputed builders like Kolte Patil, Lodha,
+                                Pride and many prestigious clients whom we are delivering to their project
+                                <br>
+                                We at Sneh have strong culture of value and we rigerousely follow them. We have strong
+                                growth plan and committed to deliver to the purpose.
 
                             </p>
-                            <div class="clearfix">
-                                <ul>
-                                    <li><i class="ti-check"></i> Quality Assurance</li>
-                                    <li><i class="ti-check"></i> 12 Years of Experience</li>
-                                </ul>
 
-                                <ul>
-                                    <li><i class="ti-check"></i> Man Production</li>
-                                    <li><i class="ti-check"></i> Timely Delivery</li>
-                                </ul>
-                                <!-- <ul style="width: 100%;">
-                                    <li><i class="ti-check"></i>  Best of The Expert & Class Machinery Setup</li>
-                                    <li><i class="ti-check"></i> Expert & Experienced Workforce</li>
-                                </ul> -->
-                            </div>
-                            <div class="btns">
+                            <!-- <div class="btns">
                                 <a href="#" class="theme-btn">Our Services</a>
                                 <a href="#" class="theme-btn-s3">Contact with us</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col col-md-6  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
@@ -327,17 +348,16 @@
                             <div class="img-holder">
                                 <img src="assets/images/about.jpg" style="border-radius: 25px;" alt="">
                             </div>
-                            <div class="video-holder">
+                            <!-- <div class="video-holder">
                                 <a href="https://www.youtube.com/embed/bNY822X3wyI" class="hero-video-btn video-btn"
                                     data-type="iframe" tabindex="0"><i class="fi flaticon-play-button"></i>Watch our
                                     intro video</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div> <!-- end container -->
         </section>
-
 
         <!-- start featured-project-[PRODUCT]-section-s2 -->
         <section class="section-padding products" style="background-color: #ffffff;">
@@ -345,150 +365,227 @@
                 <div class="row mb-2">
                     <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
                         <div class="section-title-s5">
-                            <span>Snehprecast</span>
                             <h2>Our Products</h2>
 
                         </div>
                     </div>
-                    <!-- <div class="col-lg-12  mb-2">
-                        <p class="text-center">We are one of the most coveted manufacturer of an impeccable conglomerate
-                            of Glossy Finish Paver Block, Matt Finish Paver Block, Solid Concrete Block, and much more
-                            in Pune. We manufacture these blocks using premium grade concrete mixtures. These blocks are
-                            known for their durability, high bond strength and dimensional precision.</p>
-                    </div> -->
                 </div>
 
                 <div class="row ">
-                    <div class="col-lg-4 mb-2 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="col-lg-3 mb-2 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
                         <div class="product-dec product-custom">
-                            <div class="product-container">
-                                <img src="assets/images/home-products/paving blocks-01.jpg" alt="Avatar"
-                                    class="product-image">
-                                <div class="product-overlay">
-                                    <div class="product-text">
-                                        <h4 class="pt-4">Click to Know</h4>
-                                        <a class="theme-btn-s3" href="paver-block.html">Click Me</a>
+                            <a href="shotblasted.html">
+                                <div class="product-container">
+                                    <img src="assets/images/home-products/pavers-and-tiles-01.jpg" alt=""
+                                        class="product-image">
+                                    <div class="product-overlay">
+                                        <div class="product-text">
+                                            <h4 class="pt-4">Pavers</h4>
+                                            <a class="theme-btn-s3" href="paver-block.html">Learn More</a>
+                                        </div>
                                     </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-2 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="product-dec product-custom">
+                            <a href="tiles.html">
+                                <div class="product-container">
+                                    <img src="assets/images/home-products/tiles-01.jpg" alt="" class="product-image">
+                                    <div class="product-overlay">
+                                        <div class="product-text">
+                                            <h4 class="pt-4">Tiles</h4>
+                                            <a class="theme-btn-s3" href="tiles.html">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <div class="product-container">
+                            <img src="assets/images/home-products/kerb stones-01.jpg" alt="Avatar"
+                                class="product-image">
+                            <div class="product-overlay">
+                                <div class="product-text">
+                                    <h4 class="pt-4">Kerb Stones</h4>
+                                    <a class="theme-btn-s3" href="kerb-stones.html">Learn More</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+                    <div class="col-lg-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <div class="product-container">
+                            <img src="assets/images/home-products/compound-wall-01.jpg" alt="Avatar"
+                                class="product-image">
+                            <div class="product-overlay">
+                                <div class="product-text">
+                                    <h4 class="pt-4">Compound Wall</h4>
+                                    <a class="theme-btn-s3" href="compound-wall.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="product-container">
+                            <img src="assets/images/home-products/u drain-01.jpg" alt="Avatar" class="product-image">
+                            <div class="product-overlay">
+                                <div class="product-text">
+                                    <h4 class="pt-4">U Drain</h4>
+                                    <a class="theme-btn-s3" href="u-drain.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="product-container">
+                            <img src="assets/images/home-products/re-block-01.jpg" alt="Avatar" class="product-image">
+                            <div class="product-overlay">
+                                <div class="product-text">
+                                    <h4 class="pt-4">RE Blocks</h4>
+                                    <a class="theme-btn-s3" href="RE-blocks.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="product-container">
+                            <img src="assets/images/home-products/hume pipe-01.jpg" alt="Avatar" class="product-image">
+                            <div class="product-overlay">
+                                <div class="product-text">
+                                    <h4 class="pt-4">Hume Pipe</h4>
+                                    <a class="theme-btn-s3" href="hume-pipe.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <div class="product-container">
+                            <img src="assets/images/home-products/bricks.jpg" alt="Avatar" class="product-image">
+                            <div class="product-overlay">
+                                <div class="product-text">
+                                    <h4 class="pt-4">Solid Blocks & Bricks</h4>
+                                    <a class="theme-btn-s3" href="solid-block-and-bricks.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <div class="product-container">
+                            <img src="assets/images/home-products/street furniture-01.jpg" alt="Avatar"
+                                class="product-image">
+                            <div class="product-overlay">
+                                <div class="product-text">
+                                    <h4 class="pt-4">Street Furniture</h4>
+                                    <a class="theme-btn-s3" href="street-furniture.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="product-container">
+                            <img src="assets/images/home-products/barrier board-01.jpg" alt="Avatar"
+                                class="product-image">
+                            <div class="product-overlay">
+                                <div class="product-text">
+                                    <h4 class="pt-4">Barrier Board</h4>
+                                    <a class="theme-btn-s3" href="barrier-board-and-cover.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <div class="product-container">
+                            <img src="assets/images/home-products/cover-01.jpg" alt="Avatar" class="product-image">
+                            <div class="product-overlay">
+                                <div class="product-text">
+                                    <h4 class="pt-4">Covers</h4>
+                                    <a class="theme-btn-s3" href="covers.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-lg-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <div class="product-container">
+                            <img src="assets/images/home-products/RMC-01.jpg" alt="Avatar" class="product-image">
+                            <div class="product-overlay">
+                                <div class="product-text">
+                                    <h4 class="pt-4">RMC</h4>
+                                    <a class="theme-btn-s3" href="rmc.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <div class="product-container">
+                            <img src="assets/images/home-products/dry mix morter-01.jpg" alt="Avatar"
+                                class="product-image">
+                            <div class="product-overlay">
+                                <div class="product-text">
+                                    <h4 class="pt-4">Dry Mix Morter</h4>
+                                    <a class="theme-btn-s3" href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-3 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="product-container">
+                            <img src="assets/images/home-products/site-execution-01.jpg" alt="Avatar"
+                                class="product-image">
+                            <div class="product-overlay">
+                                <div class="product-text">
+                                    <h4 class="pt-4">Site Execution</h4>
+                                    <a class="theme-btn-s3" href="site-execution.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
                         <div class="product-container">
                             <img src="assets/images/home-products/grass paver-01.jpg" alt="Avatar"
                                 class="product-image">
                             <div class="product-overlay">
                                 <div class="product-text">
                                     <h4 class="pt-4">Click to Know</h4>
-                                    <a class="theme-btn-s3" href="grass-pavor.html">Click Me</a>
+                                    <a class="theme-btn-s3" href="grass-pavor.html">Learn More</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s">
+                    </div> -->
+                    <!-- <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s">
                         <div class="product-container">
                             <img src="assets/images/home-products/glossy finish-01.jpg" alt="Avatar"
                                 class="product-image">
                             <div class="product-overlay">
                                 <div class="product-text">
                                     <h4 class="pt-4">Click to Know</h4>
-                                    <a class="theme-btn-s3" href="glossy-finish.html">Click Me</a>
+                                    <a class="theme-btn-s3" href="glossy-finish.html">Learn More</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="product-container">
-                            <img src="assets/images/home-products/solid blocks and bricks-01.jpg" alt="Avatar"
-                                class="product-image">
-                            <div class="product-overlay">
-                                <div class="product-text">
-                                    <h4 class="pt-4">Click to Know</h4>
-                                    <a class="theme-btn-s3" href="solid-block-and-bricks.html">Click Me</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
 
 
-                    <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <div class="product-container">
-                            <img src="assets/images/home-products/street furniture-01.jpg" alt="Avatar"
-                                class="product-image">
-                            <div class="product-overlay">
-                                <div class="product-text">
-                                    <h4 class="pt-4">Click to Know</h4>
-                                    <a class="theme-btn-s3" href="street-furniture.html">Click Me</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.6s">
-                        <div class="product-container">
-                            <img src="assets/images/home-products/hume pipe-01.jpg" alt="Avatar" class="product-image">
-                            <div class="product-overlay">
-                                <div class="product-text">
-                                    <h4 class="pt-4">Click to Know</h4>
-                                    <a class="theme-btn-s3" href="hume-pipe.html">Click Me</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="product-container">
-                            <img src="assets/images/home-products/compound wall-01.jpg" alt="Avatar"
-                                class="product-image">
-                            <div class="product-overlay">
-                                <div class="product-text">
-                                    <h4 class="pt-4">Click to Know</h4>
-                                    <a class="theme-btn-s3" href="compound-wall.html">Click Me</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <div class="product-container">
-                            <img src="assets/images/home-products/barrier board-01.jpg" alt="Avatar"
-                                class="product-image">
-                            <div class="product-overlay">
-                                <div class="product-text">
-                                    <h4 class="pt-4">Click to Know</h4>
-                                    <a class="theme-btn-s3" href="barrier-board-and-cover.html">Click Me</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
                         <div class="product-container">
                             <img src="assets/images/home-products/cover-01.jpg" alt="Avatar" class="product-image">
                             <div class="product-overlay">
                                 <div class="product-text">
                                     <h4 class="pt-4">Click to Know</h4>
-                                    <a class="theme-btn-s3" href="barrier-board-and-cover.html">Click Me</a>
+                                    <a class="theme-btn-s3" href="barrier-board-and-cover.html">Learn More</a>
                                 </div>
                             </div>
                         </div>
                     </div> -->
-                    <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="product-container">
-                            <img src="assets/images/home-products/kerb stones-01.jpg" alt="Avatar"
-                                class="product-image">
-                            <div class="product-overlay">
-                                <div class="product-text">
-                                    <h4 class="pt-4">Click to Know</h4>
-                                    <a class="theme-btn-s3" href="kerb-stones.html">Click Me</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
+                    <!-- <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
                         <div class="product-container">
                             <img src="assets/images/home-products/tiles-01.jpg" alt="Avatar" class="product-image">
                             <div class="product-overlay">
                                 <div class="product-text">
                                     <h4 class="pt-4">Click to Know</h4>
-                                    <a class="theme-btn-s3" href="tiles.html">Click Me</a>
+                                    <a class="theme-btn-s3" href="tiles.html">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -499,23 +596,12 @@
                             <div class="product-overlay">
                                 <div class="product-text">
                                     <h4 class="pt-4">Click to Know</h4>
-                                    <a class="theme-btn-s3" href="RE-blocks.html">Click Me</a>
+                                    <a class="theme-btn-s3" href="RE-blocks.html">Learn More</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 mb-3 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="product-container">
-                            <img src="assets/images/home-products/u drain-01.jpg" alt="Avatar" class="product-image">
-                            <div class="product-overlay">
-                                <div class="product-text">
-                                    <h4 class="pt-4">Click to Know</h4>
-                                    <a class="theme-btn-s3" href="u-drain.html">Click Me</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    </div> -->
+
                 </div>
             </div>
 
@@ -528,7 +614,6 @@
                 <div class="row mb-2">
                     <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
                         <div class="section-title-s5">
-                            <span>Snehprecast</span>
                             <h2>Trusted Partners</h2>
                         </div>
                     </div>
@@ -659,28 +744,21 @@
                         <div class="row">
                             <div class="col col-xs-12">
                                 <div class="fun-fact-grids clearfix">
-                                    <div class="grid">
+                                    <div class="grid col-md-4">
                                         <div class="info">
                                             <i class="fi flaticon-worker"></i>
-                                            <h3><span class="odometer" data-count="1200">00</span></h3>
-                                            <p>Employed</p>
+                                            <h3><span class="odometer" data-count="200000">00</span></h3>
+                                            <p>Blocks Production per Day</p>
                                         </div>
                                     </div>
-                                    <div class="grid">
+                                    <div class="grid col-md-4">
                                         <div class="info">
                                             <i class="fi flaticon-engineer"></i>
                                             <h3><span class="odometer" data-count="1500">00</span></h3>
                                             <p>Project Completed</p>
                                         </div>
                                     </div>
-                                    <div class="grid">
-                                        <div class="info">
-                                            <i class="fi flaticon-trophy"></i>
-                                            <h3><span class="odometer" data-count="25">00</span>+</h3>
-                                            <p>Award Won</p>
-                                        </div>
-                                    </div>
-                                    <div class="grid">
+                                    <div class="grid col-md-4">
                                         <div class="info">
                                             <i class="fi flaticon-like-1"></i>
                                             <h3><span class="odometer" data-count="100">00</span>%</h3>
@@ -785,8 +863,7 @@
                 <div class="row">
                     <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
                         <div class="section-title-s5">
-                            <span>Insight & Trends</span>
-                            <h2>Projects and Photogallery</h2>
+                            <h2>Photogallery</h2>
                             <p>To work in an innovative technology field thereby improving productivity, product quality
                                 & environment safety
                             </p>
@@ -796,32 +873,32 @@
                 <div class="row">
                     <div class="row photos">
                         <div class="col-sm-6 col-md-4 col-lg-3 item">
-                            <a href="assets/images/projects/bpcl.jpg" data-lightbox="photos"><img class="img-fluid"
-                                    src="assets/images/projects/bpcl.jpg">
+                            <a href="assets/images/projects/101-01.jpg" data-lightbox="photos"><img class="img-fluid"
+                                    src="assets/images/projects/101-01.jpg">
                             </a>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/projects/fiat.jpg"
-                                data-lightbox="photos"><img class="img-fluid" src="assets/images/projects/fiat.jpg"></a>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/projects/102-01.jpg"
+                                data-lightbox="photos"><img class="img-fluid" src="assets/images/projects/102-01.jpg"></a>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/projects/gardern.jpg"
+                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/projects/103-01.jpg"
                                 data-lightbox="photos"><img class="img-fluid"
-                                    src="assets/images/projects/gardern.jpg"></a></div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/projects/gorssy-finish.jpg"
+                                    src="assets/images/projects/103-01.jpg"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/projects/104-01.jpg"
                                 data-lightbox="photos"><img class="img-fluid"
-                                    src="assets/images/projects/gorssy-finish.jpg"></a></div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/projects/pump.jpg"
-                                data-lightbox="photos"><img class="img-fluid" src="assets/images/projects/pump.jpg"></a>
+                                    src="assets/images/projects/104-01.jpg"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/projects/105-01.jpg"
+                                data-lightbox="photos"><img class="img-fluid" src="assets/images/projects/105-01.jpg"></a>
                         </div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/projects/pavor.jpg"
+                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/projects/106.jpg"
                                 data-lightbox="photos"><img class="img-fluid"
-                                    src="assets/images/projects/pavor.jpg"></a></div>
+                                    src="assets/images/projects/106.jpg"></a></div>
                         <div class="col-sm-6 col-md-4 col-lg-3 item"><a
-                                href="assets/images/projects/Construction-Fly-Ash-Bricks-small.jpg"
+                                href="assets/images/projects/107.jpg"
                                 data-lightbox="photos"><img class="img-fluid"
-                                    src="assets/images/projects/Construction-Fly-Ash-Bricks-small.jpg"></a></div>
-                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/projects/grass.jpg"
+                                    src="assets/images/projects/107.jpg"></a></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/images/projects/sss.jpg"
                                 data-lightbox="photos"><img class="img-fluid"
-                                    src="assets/images/projects/grass.jpg"></a></div>
+                                    src="assets/images/projects/sss.jpg"></a></div>
                     </div>
                 </div>
             </div> <!-- end container -->
@@ -910,13 +987,12 @@
                             <div>
                                 <i class="fi flaticon-call"></i>
                                 <h4>Call us</h4>
-                                <p><a class="text-white" href="tel:+83800 16240">83800 16240</a></p>
+                                <p><a class="text-white" href="tel:+838 001 6247">838 001 6247</a></p>
                             </div>
                             <div>
                                 <i class="fi flaticon-contact"></i>
                                 <h4>Email us</h4>
-                                <p><a class="text-white"
-                                        href="mailto:sales@snehindustries.in">sales@snehindustries.in</a></p>
+                                <p><a class="text-white" href="mailto:sales@snehprecast.in">sales@snehprecast.in</a></p>
                             </div>
                         </div>
                     </div>
@@ -946,16 +1022,18 @@
                                     <h3>Usefull Links</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="#">Profile</a></li>
-                                    <li><a href="#">Products</a></li>
-                                    <li><a href="#">Projects Gallery</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="about-ceo-message.html">CEO Message</a></li>
+                                    <li><a href="about-our-team.html">Our Team</a></li>
+                                    <li><a href="">Products</a></li>
+                                    <li><a href="project-gallery.html">Gallery</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
                                 </ul>
                                 <ul>
-                                    <li><a href="#">Provacy Policy</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Blogs & Case Studies</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="our-strength.html">Our Strength</a></li>
+                                    <li><a href="about-our-story.html">Our Story</a></li>
+
                                 </ul>
                             </div>
                         </div>
@@ -965,16 +1043,27 @@
                                     <h3>Our Address</h3>
                                 </div>
                                 <ul>
-                                    <li><span>Factory Address:</span> Gate No 64,<br>
-                                        Bhawadi, Tal: Haveli<br>Dist: Pune 412207</li>
-                                    <li><span>Email:</span> sales@snehindustries.in</li>
-                                    <li><span>Office Time:</span> 10AM- 5PM</li>
+                                    <li><span>Manufacturing Unit-1:</span><br>Gate No 64,
+                                        Bhawadi,<br>Tal: Haveli Dist: Pune<br>
+                                        Pincode- 412207.
+                                    </li>
+
+
+                                    <li><span>Manufacturing Unit-2:</span><br>Gate No 1083,
+                                        Markal,<br>Tal: Khed Dist: Pune<br>
+                                        Pincode- 412105.
+                                    </li>
                                 </ul>
                                 <ul>
-                                    <li><span>Office:</span> Porwal Road, Near Dhanori, Jakat Naka, Next to Hotel
-                                        Agatya,<br> Pune 411015.</li>
+                                    <li><span>Office Address:</span><br>
+                                        406,Pride Icon, Kharadi,<br>Pune 411014
+                                    </li>
 
-                                    <li><span>Phone :</span> 83800 16240</li>
+                                    <li><span>Phone :</span> <a style="color: #545050;" href="tel:+838 001 6247">838 001
+                                            6247</a></li>
+                                    <li><span>Email:</span> <a
+                                            href="mailto:sales@snehprecast.in">sales@snehprecast.in</a></li>
+                                    <li><span>Office Time:</span> 10AM- 5PM</li>
                                 </ul>
                                 <div class="social-icons">
                                     <ul class="">
@@ -995,10 +1084,11 @@
                     <div class="row">
                         <div class="separator"></div>
                         <div class="col col-xs-12">
-                            <p class="copyright"><a href="templateshub.net">Templates Hub</a></p>
+                            <p class="copyright">Designed and Developed By <a href="https://redbixbite.com/">Red Bixbite
+                                    Pvt Ltd.</a></p>
                             <div class="extra-link">
                                 <ul>
-                                    <li><a href="#">Privace & Policy</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1042,6 +1132,7 @@
         );
         wow.init();
     </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
         $('.carousel').carousel({
@@ -1049,7 +1140,5 @@
         });
     </script>
 </body>
-
-<!-- dustech/index-2.html  13 Nov 2019 12:55:19 GMT -->
 
 </html>
